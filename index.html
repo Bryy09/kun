@@ -1,525 +1,162 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Website Artikel Kampus" />
+        <meta name="author" content="Your Name" />
+        <title>Artikel Kampus Modern</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+                background-color: #f4f5f7;
+                color: #343a40;
+            }
 
-<head>
-  <meta charset="utf-8" />
-  <title>Blogge | Personal Blog Site</title>
+            .navbar-brand {
+                font-size: 1.75rem;
+                font-weight: bold;
+                color: #4a4e69 !important;
+            }
 
-  <!--Meta For No Index-->
-  <meta name="robots" content="noindex, Nofollow, Noimageindex">
+            .hero-section {
+                background: linear-gradient(to right, rgba(74, 78, 105, 0.8), rgba(58, 63, 88, 0.8)), url('q.jpeg');
+                background-size: cover;
+                background-position: center;
+                height: 600px;
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
 
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+            .hero-section h1 {
+                font-size: 3.5rem;
+                font-weight: bold;
+            }
 
-  <!-- Theme Stylesheet -->
-  <link href="css/style.css" rel="stylesheet" />
+            .hero-section p {
+                font-size: 1.25rem;
+                margin-top: 10px;
+            }
 
-  <!--Favicon-->
-  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
-  <link rel="icon" href="images/favicon.svg" type="image/x-icon" />
-</head>
+            .btn-primary {
+                background-color: #4a4e69;
+                border: none;
+            }
 
-<body>
+            .btn-primary:hover {
+                background-color: #323547;
+            }
 
-<!-- Navbar Start -->
-<nav class="main-nav navbar navbar-expand-lg">
-  <div class="container">
-    <!-- Logo -->
-    <a class="navbar-brand" href="index.html">
-      <img class="logo-main" src="images/logo.svg" alt="logo" />
-    </a>
-    <!-- Toogle Button -->
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <div class="collapse navbar-collapse nav-list" id="mainNav">
-      <!-- Navigation Links -->
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="halaman.html">slide 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-      <!-- Social Link -->
-      <ul class="main-nav-social">
-        <li>
-          <a href="#"><i class="fa fa-facebook"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- Navbar End -->
+            .card {
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
 
-<section class="featured">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <article class="featured-post">
-          <div class="featured-post-content">
-            <div class="featured-post-author">
-              <img src="images/author.png" alt="author" />
-              <p>By <span>febry</span></p>
-            </div>
-            <a href="single-blog.html" class="featured-post-title">
-              selamat datang di project web ku
-            </a>
-            <ul class="featured-post-meta">
-              <li>
-                <i class="fa fa-clock-o"></i>
-                October 19, 2020 - 3 min read
-              </li>
-            </ul>
-          </div>
-          <div class="featured-post-thumb">
-            <img src="images/featured-post.jpg" alt="feature-post-thumb" />
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
+            .card img {
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
 
-<section class="blog">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8">
-        <div class="blog-section-title">
-          <h2>Articles</h2>
-          <p>scroll ke bawah untuk melihat hal yang lebih lagi</p>
-        </div>
-        <article class="blog-post">
-          <div class="blog-post-thumb">
-            <img src="images/blog/blog-thum-1.jpg" alt="blog-thum" />
-          </div>
-          <div class="blog-post-content">
-            <div class="blog-post-tag">
-              <a href="category.html">Travel</a>
+            footer {
+                background-color: #4a4e69;
+                color: #fff;
+                padding: 30px 0;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">KampusToday</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#articles">Artikel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="blog-post-title">
-              <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
-            </div>
-            <div class="blog-post-meta">
-              <ul>
-                <li>By <a href="about.html">Mary Astor</a></li>
-                <li>
-                  <i class="fa fa-clock-o"></i>
-                  October 19, 2020 - 2 min
-                </li>
-              </ul>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy.
-            </p>
-            <a href="single-blog.html" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
-          </div>
-        </article>
-        <article class="blog-post">
-          <div class="blog-post-thumb">
-            <a href="single-blog.html">
-              <img src="images/blog/blog-thum-2.png" alt="blog-thum" /></a>
-          </div>
-          <div class="blog-post-content">
-            <div class="blog-post-tag">
-              <a href="category.html">Travel</a>
-            </div>
-            <div class="blog-post-title">
-              <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
-            </div>
-            <div class="blog-post-meta">
-              <ul>
-                <li>By <a href="about.html">Mary Astor</a></li>
-                <li>
-                  <i class="fa fa-clock-o"></i>
-                  October 19, 2020 - 2 min
-                </li>
-              </ul>
-            </div>
+        </nav>
 
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy.
-            </p>
-            <a href="single-blog.html" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
-          </div>
-        </article>
-        <article class="blog-post">
-          <div class="blog-post-thumb">
-            <a href="single-blog.html">
-              <img src="images/blog/blog-thum-3.png" alt="blog-thum" /></a>
-          </div>
-          <div class="blog-post-content">
-            <div class="blog-post-tag">
-              <a href="category.html">Travel</a>
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <div class="container">
+                <h1>Selamat Datang di KampusToday</h1>
+                <p>Platform terbaik untuk mendapatkan informasi dan artikel terkini seputar dunia kampus.</p>
+                <a class="btn btn-primary btn-lg mt-3" href="#articles">Jelajahi Artikel</a>
             </div>
-            <div class="blog-post-title">
-              <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
-            </div>
-            <div class="blog-post-meta">
-              <ul>
-                <li>By <a href="about.html">Mary Astor</a></li>
-                <li>
-                  <i class="fa fa-clock-o"></i>
-                  October 19, 2020 - 2 min
-                </li>
-              </ul>
-            </div>
+        </header>
 
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy.
-            </p>
-            <a href="single-blog.html" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
-          </div>
-        </article>
-        <article class="blog-post">
-          <div class="blog-post-thumb">
-            <a href="single-blog.html">
-              <img src="images/blog/blog-thum-4.png" alt="blog-thum" /></a>
-          </div>
-          <div class="blog-post-content">
-            <div class="blog-post-tag">
-              <a href="category.html">Travel</a>
+        <!-- Articles Section -->
+        <section id="articles" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2>Artikel Terbaru</h2>
+                    <p class="text-muted">Dapatkan informasi menarik seputar kehidupan kampus.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="1.webp" class="card-img-top" alt="Artikel 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Tips Mengatur Waktu Kuliah</h5>
+                                <p class="card-text">Pelajari cara mengatur waktu dengan efektif untuk mencapai prestasi akademik yang lebih baik.</p>
+                                <a href="#" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="2.webp" class="card-img-top" alt="Artikel 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Panduan Mencari Beasiswa</h5>
+                                <p class="card-text">Panduan lengkap untuk mencari dan mendaftar beasiswa lokal maupun internasional.</p>
+                                <a href="#" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="3.webp" class="card-img-top" alt="Artikel 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Cara Menghadapi Ujian Akhir</h5>
+                                <p class="card-text">Persiapkan diri menghadapi ujian akhir dengan tips praktis dan efisien.</p>
+                                <a href="#" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="blog-post-title">
-              <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
-            </div>
-            <div class="blog-post-meta">
-              <ul>
-                <li>By <a href="about.html">Mary Astor</a></li>
-                <li>
-                  <i class="fa fa-clock-o"></i>
-                  October 19, 2020 - 2 min
-                </li>
-              </ul>
-            </div>
+        </section>
 
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy.
-            </p>
-            <a href="single-blog.html" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
-          </div>
-        </article>
-        <article class="blog-post">
-          <div class="blog-post-thumb">
-            <a href="single-blog.html">
-              <img src="images/blog/blog-thum-5.png" alt="blog-thum" /></a>
-          </div>
-          <div class="blog-post-content">
-            <div class="blog-post-tag">
-              <a href="category.html">Travel</a>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 KampusToday. All Rights Reserved.</p>
             </div>
-            <div class="blog-post-title">
-              <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
-            </div>
-            <div class="blog-post-meta">
-              <ul>
-                <li>By <a href="about.html">Mary Astor</a></li>
-                <li>
-                  <i class="fa fa-clock-o"></i>
-                  October 19, 2020 - 2 min
-                </li>
-              </ul>
-            </div>
+        </footer>
 
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy.
-            </p>
-            <a href="single-blog.html" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
-          </div>
-        </article>
-        <article class="blog-post">
-          <div class="blog-post-thumb">
-            <a href="single-blog.html">
-              <img src="images/blog/blog-thum-6.png" alt="blog-thum" /></a>
-          </div>
-          <div class="blog-post-content">
-            <div class="blog-post-tag">
-              <a href="category.html">Travel</a>
-            </div>
-            <div class="blog-post-title">
-              <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
-            </div>
-            <div class="blog-post-meta">
-              <ul>
-                <li>By <a href="about.html">Mary Astor</a></li>
-                <li>
-                  <i class="fa fa-clock-o"></i>
-                  October 19, 2020 - 2 min
-                </li>
-              </ul>
-            </div>
-
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy.
-            </p>
-            <a href="single-blog.html" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
-          </div>
-        </article>
-        <article class="blog-post">
-          <div class="blog-post-thumb">
-            <a href="single-blog.html">
-              <img src="images/blog/blog-thum-7.png" alt="blog-thum" /></a>
-          </div>
-          <div class="blog-post-content">
-            <div class="blog-post-tag">
-              <a href="category.html">Travel</a>
-            </div>
-            <div class="blog-post-title">
-              <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
-            </div>
-            <div class="blog-post-meta">
-              <ul>
-                <li>By <a href="about.html">Mary Astor</a></li>
-                <li>
-                  <i class="fa fa-clock-o"></i>
-                  October 19, 2020 - 2 min
-                </li>
-              </ul>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy.
-            </p>
-            <a href="single-blog.html" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
-          </div>
-        </article>
-        <div class="blog-post-pagination">
-          <nav aria-label="Page navigation example" class="nav-bg">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link active" href="#">1</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#">
-                  <i class="fa fa-angle-right"></i>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="blog-post-widget">
-          <div class="latest-widget-title">
-            <h2>Trending post</h2>
-          </div>
-          <div class="latest-widget">
-            <div class="latest-widget-thum">
-              <a href="single-blog.html">
-                <img src="images/blog/blog-thum-8.png" alt="blog-thum" /></a>
-              <div class="icon">
-                <a href="single-blog.html">
-                  <img src="images/blog/icon.svg" alt="icon" /></a>
-              </div>
-            </div>
-            <div class="latest-widget-content">
-              <div class="content-title">
-                <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
-              </div>
-              <div class="content-meta">
-                <ul>
-                  <li>
-                    <i class="fa fa-clock-o"></i>
-                    October 19, 2020 - 2 min
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="latest-widget">
-            <div class="latest-widget-thum">
-              <a href="single-blog.html">
-                <img src="images/blog/blog-thum-9.png" alt="blog-thum" /></a>
-              <div class="icon">
-                <a href="single-blog.html">
-                  <img src="images/blog/icon.svg" alt="icon" /></a>
-              </div>
-            </div>
-            <div class="latest-widget-content">
-              <div class="content-title">
-                <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
-              </div>
-              <div class="content-meta">
-                <ul>
-                  <li>
-                    <i class="fa fa-clock-o"></i>
-                    October 19, 2020 - 2 min
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="latest-widget">
-            <div class="latest-widget-thum">
-              <a href="single-blog.html">
-                <img src="images/blog/blog-thum-10.png" alt="blog-thum" /></a>
-              <div class="icon">
-                <a href="single-blog.html">
-                  <img src="images/blog/icon.svg" alt="icon" /></a>
-              </div>
-            </div>
-            <div class="latest-widget-content">
-              <div class="content-title">
-                <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
-              </div>
-              <div class="content-meta">
-                <ul>
-                  <li>
-                    <i class="fa fa-clock-o"></i>
-                    October 19, 2020 - 2 min
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="latest-widget">
-            <div class="latest-widget-thum">
-              <a href="single-blog.html">
-                <img src="images/blog/blog-thum-11.png" alt="blog-thum" /></a>
-              <div class="icon">
-                <a href="single-blog.html">
-                  <img src="images/blog/icon.svg" alt="icon" /></a>
-              </div>
-            </div>
-            <div class="latest-widget-content">
-              <div class="content-title">
-                <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
-              </div>
-              <div class="content-meta">
-                <ul>
-                  <li>
-                    <i class="fa fa-clock-o"></i>
-                    October 19, 2020 - 2 min
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="instagram">
-  <a href="#">
-    <i class="fa fa-instagram" aria-hidden="true"></i>
-    <span>@Mary_Astor</span>
-  </a>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="instagram-item">
-
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-1.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-2.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-3.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-4.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-5.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-6.png" alt="image">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="footer">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-6 mx-auto text-center">
-        <div class="footer-logo">
-          <img src="images/logo.svg" alt="logo" />
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6 mx-auto">
-        <div class="footer-nav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6 mx-auto">
-        <div class="sociale-icon">
-          <ul>
-            <li>
-              <a href="#"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="copy-right">
-          <p>© Copyright <span id="copyrightYear"></span> - All Rights Reserved by <a href="https://staticmania.com/" target="_blank">StaticMania</a> Distributed By <a href="https://themewagon.com/" target="blank">ThemeWagon</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9rV6yesIygoVKTD6QLf_iCa9eiIIHqZ0&libraries=geometry">
-</script>
-<!-- Vendor JS -->
-<script src="vendor/jQuery/jquery.min.js"></script>
-<script src="vendor/bootstrap/bootstrap.min.js"></script>
-<script src="vendor/slick/slick.min.js"></script>
-<script src="vendor/g-map/gmap.js"></script>
-<!-- Main JS -->
-<script src="js/script.js"></script>
-</body>
-
-</html>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+                              </html>
